@@ -5,15 +5,15 @@ North American professional sports (Football, Hockey, Baseball, and Basketball).
 reference websites hosted on the sports-reference.com network. This app makes use of the libcurl library
 for C and C++. Source code is in C++. For details on the data see:
 
-##https://www.sports-reference.com/
+#https://www.sports-reference.com/
 
-##https://www.pro-football-reference.com/
+#https://www.pro-football-reference.com/
 
-##https://www.hockey-reference.com/
+#https://www.hockey-reference.com/
 
-##https://www.baseball-reference.com/
+#https://www.baseball-reference.com/
 
-##https://www.basketball-reference.com/
+#https://www.basketball-reference.com/
 
 Upon starting, the user is prompted to enter a name of any player. Search is performed by full last name, 
 partial last name, full first plus partial last name, or full first plus full last name. In cases of multiple
