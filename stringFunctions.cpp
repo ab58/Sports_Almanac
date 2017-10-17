@@ -64,9 +64,14 @@ void setPlayerInfo(const int i, vector<string> &matchingNames, string &urlExtens
     vector<string> playerInfo = split(matchingNames[i], " ");
     urlExtension = playerInfo[0].substr(playerInfo[0].find_last_of("/")+1);
     name = playerInfo[1] + " " + playerInfo[2];
-    posAndYears = playerInfo[3];
-    if (playerInfo.size() > 5) {
-        posAndYears = posAndYears + " " + playerInfo[4];
+    int pyi = 3;
+    if (isalpha(playerInfo[3].at(0))) {
+        name = name + " " + playerInfo[3];
+        pyi++;
+    }
+    posAndYears = playerInfo[pyi];
+    if (playerInfo.size() > pyi+1) {
+        posAndYears = posAndYears + " " + playerInfo[pyi+1];
     }
     league = playerInfo[playerInfo.size()-1];
 }
