@@ -20,8 +20,9 @@ int main() {
         playerName[0] = toupper(playerName[0]);
         char searchLetter = playerName[0];
         if (playerName.find(" ") != string::npos && playerName.find(" ") != playerName.size()-1) {
-            playerName[playerName.find(" ")+1] = toupper(playerName[playerName.find(" ")+1]);
-            searchLetter = playerName[playerName.find(" ")+1];
+            playerName[playerName.find_last_of(" ")+1] =
+            toupper(playerName[playerName.find_last_of(" ")+1]);
+            searchLetter = playerName[playerName.find_last_of(" ")+1];
         }
         capAfterPunc(playerName);
 
