@@ -1,5 +1,6 @@
 #include <sstream>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -70,7 +71,7 @@ void setPlayerInfo(const int i, vector<string> &matchingNames, string &urlExtens
         pyi++;
     }
     posAndYears = playerInfo[pyi];
-    if (playerInfo.size() > pyi+1) {
+    if (playerInfo.size() > pyi+2) {
         posAndYears = posAndYears + " " + playerInfo[pyi+1];
     }
     league = playerInfo[playerInfo.size()-1];
