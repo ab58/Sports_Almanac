@@ -86,7 +86,7 @@ int main() {
                 cout << (i+1) << ". " << name << " " << posAndYears << " " << league << "\n";
             }
 
-            cout << "\nPlease select an from the list (by number): ";
+            cout << "\nPlease select a name from the list (by number): ";
             int option;
             cin >> option;
             while (option > matchingNames.size() || option < 1) {

@@ -38,7 +38,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Sports_Almanac_Lib.h" />
+		<Unit filename="libcurlFunctions.cpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="stringFunctions.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
